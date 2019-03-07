@@ -32,7 +32,6 @@ status_file.close()
 #rename or move a file
 old_location = 'old/folder/old_file.ext'
 new_location = 'new/folder/new_file.ext'
-
 shutil.move(old_location, new_location)
 
 
