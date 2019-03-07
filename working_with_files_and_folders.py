@@ -1,3 +1,8 @@
+'''
+Common file handling operations in Python
+for quick reference
+'''
+
 import os
 import shutil
 
