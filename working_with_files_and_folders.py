@@ -44,3 +44,14 @@ if os.path.isdir(folder_path):
     shutil.rmtree(folder_path)
 
 
+#log basic error message
+from datetime import datetime
+base_path = u'//tableau/Share/Misc/AutomatedClippings/MOE/'+PROJECT_NAME+'/'
+input_filename = u'Input_All Clips.xlsx'
+error_log_file_name = base_path+u'error_log.txt'
+
+def log_error_message(message):
+    error_log = open(error_log_file_name, 'w')
+    timestamp = datetime.now()
+    error_log.write(str(timestamp) + ": " + message)
+    error_log.close()
