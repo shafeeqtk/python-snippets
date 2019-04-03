@@ -46,7 +46,7 @@ if os.path.isdir(folder_path):
 
 #log basic error message
 from datetime import datetime
-base_path = u'//tableau/Share/Misc/AutomatedClippings/MOE/'+PROJECT_NAME+'/'
+base_path = u'//path/to/directory/'
 input_filename = u'Input_All Clips.xlsx'
 error_log_file_name = base_path+u'error_log.txt'
 
