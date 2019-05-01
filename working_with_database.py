@@ -1,4 +1,7 @@
 import pandas as pd
+# this psycopg package is required for running sqlalchemy
+# import sys
+# !{sys.executable} -m pip install psycopg2-binary
 import sqlalchemy as sa
 
 #create connection to postgres database
