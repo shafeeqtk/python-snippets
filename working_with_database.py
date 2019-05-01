@@ -7,6 +7,18 @@ import sqlalchemy as sa
 #create connection to postgres database
 con = sa.create_engine('postgresql://user:password@server_ip/dbname')
 
+'''
+QUERYING THE DATABASE
+'''
+
+
+df = pd.read_sql('select * from schema_name."tablename" limit 10', con)
+
+
+'''
+WRITING TO THE DATABASE
+'''
+
 #read csv file as chunks
 chunks = pd.read_csv("source.csv", chunksize=100000)
 
